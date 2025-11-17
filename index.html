@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arthur Amancio Francisco | Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="profile-img" src="images/profile.jpg" alt="Foto de Arthur Amancio Francisco" />
+        <div class="name-title">
+          <h1 id="portfolio-name">Arthur Amancio Francisco</h1>
+          <p id="portfolio-role">Desenvolvedor Full Stack | Mobile | Designer</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SOBRE -->
+    <section id="about" class="container section about">
+      <h2>Sobre</h2>
+      <p>
+        Olá! Sou <strong>Arthur Amancio Francisco</strong>, desenvolvedor apaixonado por tecnologia, criação de interfaces e
+        resolução de problemas. Atuo principalmente com desenvolvimento web e mobile, utilizando Java, React, React Native
+        e banco de dados. Gosto de transformar ideias em aplicações modernas, funcionais e bem projetadas — sempre focando em desempenho e usabilidade.
+      </p>
+
+      <ul class="meta">
+        <li><strong>Local:</strong> Macedônia, Brasil</li>
+        <li><strong>Email:</strong> <a href="mailto:arthur.francisco@etec.sp.gov.br">arthur.francisco@etec.sp.gov.br</a></li>
+        <li><strong>Telefone:</strong> (17) 99603-2051</li>
+      </ul>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="skills" class="container section skills">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React, Tailwind, UI/UX</p>
+        </div>
+        <div class="skill">
+          <h3>Backend</h3>
+          <p>Java, Spring Boot, Node.js, APIs REST, Autenticação JWT</p>
+        </div>
+        <div class="skill">
+          <h3>Mobile</h3>
+          <p>React Native, Expo, Integração com APIs</p>
+        </div>
+        <div class="skill">
+          <h3>Bancos de dados</h3>
+          <p>MySQL, PostgreSQL, SQLite</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projects" class="container section projects">
+      <h2>Projetos</h2>
+
+      <!-- Projeto 1 -->
+      <article class="project">
+        <div class="project-info">
+          <h3 class="project-title">Projeto 1 — Sistema de Chamados</h3>
+          <p class="project-desc">
+            Sistema web completo para abertura e gerenciamento de chamados técnicos. Conta com login, níveis de acesso,
+            CRUD completo e painel administrativo. Focado em produtividade e simplicidade.
+          </p>
+          <p class="project-tags">Java • Spring Boot • MySQL • Bootstrap</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+        <div class="project-thumb">
+          <img src="images/project1.png" alt="Miniatura do Projeto Sistema de Chamados" />
+        </div>
+      </article>
+
+      <!-- Projeto 2 -->
+      <article class="project">
+        <div class="project-info">
+          <h3 class="project-title">Projeto 2 — App de Tarefas Mobile</h3>
+          <p class="project-desc">
+            Aplicativo mobile de organização pessoal com notificações, categorias e sistema de prioridades.
+            Desenvolvido com foco em velocidade e experiência do usuário.
+          </p>
+          <p class="project-tags">React Native • Expo • AsyncStorage</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+        <div class="project-thumb">
+          <img src="images/project2.png" alt="Miniatura do Projeto App de Tarefas" />
+        </div>
+      </article>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contact" class="container section contact">
+      <h2>Contato</h2>
+      <p>Quer trabalhar comigo ou conversar sobre projetos? Fique à vontade para me chamar.</p>
+
+      <div class="contact-cards">
+        <div class="card">
+          <h4>Email</h4>
+          <a href="mailto:arthur.francisco@etec.sp.gov.br">arthur.francisco@etec.sp.gov.br</a>
+        </div>
+
+        <div class="card">
+          <h4>LinkedIn</h4>
+          <a href="#" target="_blank" rel="noopener">linkedin.com/in/arthur-francisco</a>
+        </div>
+
+        <div class="card">
+          <h4>GitHub</h4>
+          <a href="https://github.com/ArthurFancisco" target="_blank" rel="noopener">github.com/Arthur-Fancisco</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Arthur Amancio Francisco — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
