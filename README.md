@@ -1,37 +1,22 @@
-# Arthur Amancio Francisco — portfólio
+# Arthur Amancio — portfólio
 
-Apresentação pessoal com foco em desenvolvimento Java e aplicações web. O site reúne projetos reais do GitHub e links para seus READMEs, com tecnologias e estágio de desenvolvimento.
+Site estático em português com apresentação pessoal, seis projetos reais, filtros de tecnologia, detalhes em diálogo, formação, experiência e contato pelo LinkedIn/GitHub.
 
-## Projetos apresentados
+HTML, CSS e JavaScript sem dependências de build. Os arquivos na raiz e na pasta `assets/` compõem o site. Para servir localmente, com Python 3 instalado, execute `python -m http.server 8000` e abra `http://localhost:8000`.
 
-- **CourtTime:** TCC em equipe para agendamento da quadra da ETEC.
-- **UpBox:** aplicação acadêmica de gestão de estoque.
-- **AgendaFácil Pro:** agendamento público e painel administrativo.
-- **FlowStock:** MVP de gestão multiempresa.
-- **Guia do Colaborador UB:** tutorial do Portal de Suporte, em revisão interna.
-- **Hospital-ERP:** estudo de fluxos hospitalares com dados fictícios.
+## Conteúdo
 
-## Executar
+CourtTime e UpBox são os destaques visuais. AgendaFácil Pro, FlowStock, Guia do Colaborador UB e Hospital-ERP completam a seleção. Os estágios de desenvolvimento e a autoria em equipe são identificados. Não há formulário de contato, coleta de dados ou integração de contas.
 
-O site usa apenas HTML e CSS, sem dependências de build. Abra `index.html` no navegador ou, com Python 3 instalado, execute na raiz:
+As capturas vieram dos repositórios públicos do proprietário:
 
-```bash
-python -m http.server 8000
-```
+- CourtTime: `docs/evidencias/baseline-436b262/aluno-quadra-1440.png`, baseline 436b262.
+- UpBox: `docs/evidencias/mysql/dashboard-1366x768.png`.
 
-Acesse `http://localhost:8000`. No Windows, também é possível usar `py -m http.server 8000`.
-
-## Organização
-
-- `index.html`: apresentação, projetos e contato.
-- `style.css`: layout responsivo, estados de foco e estilos de impressão.
-
-As duas imagens de interface são carregadas dos respectivos repositórios públicos. A captura do CourtTime corresponde à baseline `436b262`; as imagens são evidências existentes e podem diferir da versão atual.
+As imagens são evidências históricas e podem diferir das interfaces atuais. Fontes DM Sans e Manrope são carregadas do Google Fonts, com fallback para fontes do sistema.
 
 ## Manutenção
 
-Ao atualizar os projetos, confira o README e o código da branch principal de cada repositório. Preserve a indicação de projetos em equipe e diferencie funcionalidades prontas, estudos e próximas evoluções.
+Textos e links principais ficam em `index.html`; detalhes dos projetos ficam em `script.js`; aparência em `style.css`. Ao atualizar funcionalidades, compare os READMEs e a branch principal dos projetos antes de alterar as descrições.
 
-Este repositório contém o código do portfólio. Sua existência não confirma uma publicação em hospedagem.
-
-[GitHub](https://github.com/arthur-amancio) · [LinkedIn](https://www.linkedin.com/in/arthur-amancio-francisco/)
+Recursos de acessibilidade: link para pular conteúdo, foco visível, menu com estado expandido, filtros com `aria-pressed`, anúncio de contagem, diálogo nativo e respeito à preferência por movimento reduzido.
