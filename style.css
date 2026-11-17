@@ -91,15 +91,12 @@ h1 em { display: inline-block; }
 .featured-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .project-card { min-width: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; padding-bottom: 22px; background: white; display: flex; flex-direction: column; }
 .project-image { background: #e3ebdc; }
-.upbox-image { background: #eee5d5; }
 .image-topline { display: flex; justify-content: space-between; gap: 12px; padding: 16px 20px; font-size: 12px; font-weight: 700; letter-spacing: .05em; color: #344d30; }
-.upbox-image .image-topline { color: #66512e; }
 .screenshot-button { display: block; position: relative; border: 0; border-block: 1px solid #c8d3c0; width: 100%; background: white; padding: 0; }
 .screenshot-button img { width: 100%; height: auto; aspect-ratio: 1.44; object-fit: contain; }
 .zoom-hint { position: absolute; right: 12px; bottom: 12px; display: flex; align-items: center; gap: 16px; background: var(--ink); color: white; padding: 8px 12px; border-radius: 5px; font-size: 12px; box-shadow: 0 2px 8px #0002; }
 .screenshot-button:hover .zoom-hint { background: var(--green); }
 .image-label { display: block; padding: 12px 20px; font-size: 11px; letter-spacing: .04em; color: #354d30; }
-.upbox-image .image-label { color: #66512e; }
 .project-meta { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; margin: 22px 22px 0; gap: 10px; }
 .project-meta > p { font-size: 12px; }
 .project-meta > p > span { margin-left: 9px; letter-spacing: .04em; color: var(--muted); font-size: 11px; }
@@ -267,4 +264,15 @@ dialog li + li { margin-top: 9px; }
   .row-main { grid-column: 2; }
   .row-status { grid-column: 2; grid-row: auto; }
   .row-link { grid-column: 2; grid-row: auto; justify-self: start; }
+}
+
+/* O destaque principal ocupa a largura disponível após a curadoria dos projetos. */
+.featured-grid { grid-template-columns: minmax(0, 1fr); }
+.project-card[data-project="courttime"] { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); padding-bottom: 0; }
+.project-card[data-project="courttime"] > .project-image { grid-column: 1; grid-row: 1 / span 5; }
+.project-card[data-project="courttime"] > :not(.project-image) { grid-column: 2; }
+.project-card[data-project="courttime"] > .project-actions { margin-bottom: 22px; }
+@media (max-width: 780px) {
+  .project-card[data-project="courttime"] { display: flex; padding-bottom: 22px; }
+  .project-card[data-project="courttime"] > .project-actions { margin-bottom: 0; }
 }
