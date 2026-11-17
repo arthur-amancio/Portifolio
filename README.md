@@ -42,3 +42,13 @@ O build publica somente HTML, CSS, JavaScript e assets. O site não depende de l
 - Capturas históricas da baseline `436b262`, identificadas como tal. A captura mobile vem de `docs/evidencias/baseline-436b262/aluno-quadra-390.png` do repositório CourtTime.
 
 Validação: sintaxe JavaScript, filtros, diálogo de projeto, ampliação de captura, menu e ausência de rolagem horizontal nas larguras de celular e tablet verificadas.
+
+## Navegação e acessibilidade
+
+Os cinco projetos possuem detalhes nativos e links diretos por fragmento (`#detalhes-agenda`, por exemplo). Court Time e AgendaFácil aparecem juntos; o estudo completo do TCC é expansível. As contribuições individuais citam commits públicos.
+
+O currículo pode ser baixado em `assets/Arthur-Amancio-Curriculo.pdf`. O conteúdo e a navegação principal continuam acessíveis sem JavaScript.
+
+Verificação desta atualização: axe-core 4.10.3, tags WCAG 2 A/AA e 2.1 AA, sem violações detectadas na página inicial; 23 regras aprovadas. Isso não equivale a certificação de acessibilidade. Detalhes operáveis por teclado e larguras de 320 e 640 px sem rolagem horizontal na verificação. PDF revisado visualmente, com uma página.
+
+As capturas do Court Time permanecem históricas e identificadas. AgendaFácil usa um fluxo ilustrativo identificado, pois o repositório ainda não possui capturas reais. A verificação de zoom real de 200% não foi concluída nesta rodada.
