@@ -1,150 +1,127 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Arthur Amancio Francisco | Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Arthur Amancio Francisco: aplicações web com Java, Spring Boot e bancos de dados. Conheça CourtTime, UpBox e outros projetos.">
+  <meta name="color-scheme" content="light">
+  <title>Arthur Amancio Francisco | Desenvolvimento Java</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <img class="profile-img" src="images/profile.jpg" alt="Foto de Arthur Amancio Francisco" />
-        <div class="name-title">
-          <h1 id="portfolio-name">Arthur Amancio Francisco</h1>
-          <p id="portfolio-role">Desenvolvedor Full Stack | Mobile | Designer</p>
-        </div>
-      </div>
-
-      <nav class="nav">
-        <a href="#about">Sobre</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#projects">Projetos</a>
-        <a href="#contact">Contato</a>
+      <a class="brand" href="#inicio" aria-label="Arthur Amancio Francisco — início"><span class="monogram" aria-hidden="true">AF</span><span>Arthur Amancio<span class="brand-subtitle">Desenvolvimento de software</span></span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
-
-  <main>
-
-    <!-- SOBRE -->
-    <section id="about" class="container section about">
-      <h2>Sobre</h2>
-      <p>
-        Olá! Sou <strong>Arthur Amancio Francisco</strong>, desenvolvedor apaixonado por tecnologia, criação de interfaces e
-        resolução de problemas. Atuo principalmente com desenvolvimento web e mobile, utilizando Java, React, React Native
-        e banco de dados. Gosto de transformar ideias em aplicações modernas, funcionais e bem projetadas — sempre focando em desempenho e usabilidade.
-      </p>
-
-      <ul class="meta">
-        <li><strong>Local:</strong> Macedônia, Brasil</li>
-        <li><strong>Email:</strong> <a href="mailto:arthur.francisco@etec.sp.gov.br">arthur.francisco@etec.sp.gov.br</a></li>
-        <li><strong>Telefone:</strong> (17) 99603-2051</li>
-      </ul>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="skills" class="container section skills">
-      <h2>Habilidades</h2>
-      <div class="skills-grid">
-        <div class="skill">
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, React, Tailwind, UI/UX</p>
-        </div>
-        <div class="skill">
-          <h3>Backend</h3>
-          <p>Java, Spring Boot, Node.js, APIs REST, Autenticação JWT</p>
-        </div>
-        <div class="skill">
-          <h3>Mobile</h3>
-          <p>React Native, Expo, Integração com APIs</p>
-        </div>
-        <div class="skill">
-          <h3>Bancos de dados</h3>
-          <p>MySQL, PostgreSQL, SQLite</p>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <div class="container">
+        <p class="eyebrow">Java · Spring Boot · Bancos de dados</p>
+        <h1 id="titulo">Arthur Amancio<br>Francisco<span class="accent">.</span></h1>
+        <p class="hero-lead">Desenvolvedor Java em formação.<br>Aplicações web para organizar processos reais.</p>
+        <p class="hero-detail">Estudante de Informática para Internet na ETEC e estagiário de TI na Universidade Brasil. Meu foco é conectar regras de negócio, dados e interfaces claras.</p>
+        <div class="actions">
+          <a class="button primary" href="#projetos">Conhecer os projetos</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/arthur-amancio-francisco/">Conversar no LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
-
-    <!-- PROJETOS -->
-    <section id="projects" class="container section projects">
-      <h2>Projetos</h2>
-
-      <!-- Projeto 1 -->
-      <article class="project">
-        <div class="project-info">
-          <h3 class="project-title">Projeto 1 — Sistema de Chamados</h3>
-          <p class="project-desc">
-            Sistema web completo para abertura e gerenciamento de chamados técnicos. Conta com login, níveis de acesso,
-            CRUD completo e painel administrativo. Focado em produtividade e simplicidade.
-          </p>
-          <p class="project-tags">Java • Spring Boot • MySQL • Bootstrap</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Demo</a>
-            <a href="#" target="_blank" rel="noopener">Código</a>
-          </div>
-        </div>
-        <div class="project-thumb">
-          <img src="images/project1.png" alt="Miniatura do Projeto Sistema de Chamados" />
+    <section id="projetos" class="container section" aria-labelledby="titulo-projetos">
+      <div class="section-heading"><p class="eyebrow">Trabalho e aprendizado</p><h2 id="titulo-projetos">Projetos selecionados</h2><p>Aplicações acadêmicas e de portfólio. Cada repositório apresenta as funcionalidades, a execução e as limitações da versão atual.</p></div>
+      <div class="project-grid">
+      <article class="project featured">
+        <img class="project-image" src="https://raw.githubusercontent.com/arthur-amancio/CourtTime/main/docs/evidencias/baseline-436b262/aluno-quadra-1440.png" alt="Consulta da quadra na baseline documentada do CourtTime" width="1440" height="900" loading="lazy">
+        <div class="project-body">
+          <p class="eyebrow">TCC em equipe</p>
+          <h3>CourtTime</h3>
+          <p>Agendamento da quadra da ETEC com participantes, PDFs, conferência documental, contribuição presencial e aprovação administrativa.</p>
+          <p class="project-stack">Java · Spring Boot · Thymeleaf · PostgreSQL</p>
+          <a class="project-link" href="https://github.com/arthur-amancio/CourtTime">Explorar CourtTime <span aria-hidden="true">↗</span></a>
         </div>
       </article>
-
-      <!-- Projeto 2 -->
-      <article class="project">
-        <div class="project-info">
-          <h3 class="project-title">Projeto 2 — App de Tarefas Mobile</h3>
-          <p class="project-desc">
-            Aplicativo mobile de organização pessoal com notificações, categorias e sistema de prioridades.
-            Desenvolvido com foco em velocidade e experiência do usuário.
-          </p>
-          <p class="project-tags">React Native • Expo • AsyncStorage</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Demo</a>
-            <a href="#" target="_blank" rel="noopener">Código</a>
-          </div>
-        </div>
-        <div class="project-thumb">
-          <img src="images/project2.png" alt="Miniatura do Projeto App de Tarefas" />
+      <article class="project featured">
+        <img class="project-image" src="https://raw.githubusercontent.com/arthur-amancio/UpBox/main/docs/evidencias/mysql/dashboard-1366x768.png" alt="Dashboard do UpBox no ambiente MySQL documentado" width="1440" height="900" loading="lazy">
+        <div class="project-body">
+          <p class="eyebrow">Projeto acadêmico</p>
+          <h3>UpBox</h3>
+          <p>Gestão de estoque com produtos, categorias, entradas e saídas, histórico, dashboard e relatórios. Execução local e pacote Windows.</p>
+          <p class="project-stack">Java · Spring Boot · Thymeleaf · MySQL</p>
+          <a class="project-link" href="https://github.com/arthur-amancio/UpBox">Explorar UpBox <span aria-hidden="true">↗</span></a>
         </div>
       </article>
+      <article class="project">
 
+        <div class="project-body">
+          <p class="eyebrow">Em desenvolvimento</p>
+          <h3>AgendaFácil Pro</h3>
+          <p>Agendamento público para estabelecimentos de serviços, com painel administrativo autenticado e persistência relacional.</p>
+          <p class="project-stack">Java · Spring Boot · Thymeleaf · PostgreSQL</p>
+          <a class="project-link" href="https://github.com/arthur-amancio/AgendaFacil">Explorar AgendaFácil Pro <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="project">
+
+        <div class="project-body">
+          <p class="eyebrow">MVP em evolução</p>
+          <h3>FlowStock</h3>
+          <p>Estudo de gestão multiempresa com estoque, produção e vendas, API em Spring Boot e interface em React.</p>
+          <p class="project-stack">Java 21 · React · TypeScript · PostgreSQL</p>
+          <a class="project-link" href="https://github.com/arthur-amancio/ControleEstoque">Explorar FlowStock <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="project">
+
+        <div class="project-body">
+          <p class="eyebrow">Em revisão interna</p>
+          <h3>Guia do Colaborador UB</h3>
+          <p>Tutorial por etapas para orientar colaboradores no uso do Portal de Suporte da Universidade Brasil.</p>
+          <p class="project-stack">React · TypeScript · CSS</p>
+          <a class="project-link" href="https://github.com/arthur-amancio/Guia-Orienta-o-UB">Explorar Guia do Colaborador UB <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="project">
+
+        <div class="project-body">
+          <p class="eyebrow">Estudo em revisão</p>
+          <h3>Hospital-ERP</h3>
+          <p>Aplicação acadêmica para estudar cadastros e fluxos hospitalares com diferentes perfis. Demonstração com dados fictícios.</p>
+          <p class="project-stack">Java · Spring Boot · Thymeleaf · PostgreSQL</p>
+          <a class="project-link" href="https://github.com/arthur-amancio/Hospital-ERP">Explorar Hospital-ERP <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      </div>
+      <p class="caption">As imagens são evidências já versionadas nos projetos. A captura do CourtTime corresponde à baseline 436b262; versões atuais podem apresentar diferenças.</p>
     </section>
-
-    <!-- CONTATO -->
-    <section id="contact" class="container section contact">
-      <h2>Contato</h2>
-      <p>Quer trabalhar comigo ou conversar sobre projetos? Fique à vontade para me chamar.</p>
-
-      <div class="contact-cards">
-        <div class="card">
-          <h4>Email</h4>
-          <a href="mailto:arthur.francisco@etec.sp.gov.br">arthur.francisco@etec.sp.gov.br</a>
-        </div>
-
-        <div class="card">
-          <h4>LinkedIn</h4>
-          <a href="#" target="_blank" rel="noopener">linkedin.com/in/arthur-francisco</a>
-        </div>
-
-        <div class="card">
-          <h4>GitHub</h4>
-          <a href="https://github.com/arthur-amancio" target="_blank" rel="noopener">github.com/arthur-amancio</a>
+    <section id="sobre" class="about-section" aria-labelledby="titulo-sobre">
+      <div class="container about-grid">
+        <div><p class="eyebrow">Sobre mim</p><h2 id="titulo-sobre">Da rotina de TI<br>ao desenvolvimento.</h2></div>
+        <div class="about-copy">
+          <p>Curso o Ensino Médio integrado ao Técnico em Informática para Internet na ETEC Prof. Armando José Farinazzo, com conclusão prevista para dezembro de 2026.</p>
+          <p>Na Universidade Brasil, atuo como estagiário de TI com suporte a usuários, computadores, redes e infraestrutura. Essa experiência me aproxima dos problemas e das dúvidas de quem utiliza os sistemas.</p>
+          <p>No desenvolvimento, estudo Java, Spring Boot, persistência relacional, controle de acesso e testes. Também utilizo React e TypeScript em projetos específicos.</p>
+          <dl class="skills">
+            <div><dt>Backend</dt><dd>Java, Spring MVC, Spring Security, Spring Data JPA</dd></div>
+            <div><dt>Dados</dt><dd>PostgreSQL, MySQL e SQL</dd></div>
+            <div><dt>Interfaces</dt><dd>Thymeleaf, HTML, CSS, JavaScript, React e TypeScript</dd></div>
+            <div><dt>Ferramentas</dt><dd>Git, GitHub, Maven, JUnit e GitHub Actions</dd></div>
+          </dl>
         </div>
       </div>
     </section>
-
+    <section id="contato" class="container section contact" aria-labelledby="titulo-contato">
+      <p class="eyebrow">Vamos conversar</p>
+      <h2 id="titulo-contato">Busco crescer em desenvolvimento.</h2>
+      <p>Estou aberto a conversar sobre oportunidades de aprendizado e projetos de software.</p>
+      <div class="actions"><a class="button primary" href="https://www.linkedin.com/in/arthur-amancio-francisco/">LinkedIn <span aria-hidden="true">↗</span></a><a class="button outline" href="https://github.com/arthur-amancio">GitHub <span aria-hidden="true">↗</span></a></div>
+    </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Arthur Amancio Francisco — Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <footer class="site-footer"><div class="container"><p>Arthur Amancio Francisco · Macedônia, São Paulo</p><a href="#inicio">Voltar ao início ↑</a></div></footer>
 </body>
 </html>
