@@ -63,3 +63,29 @@ dialog.addEventListener('click', event => {
 });
 dialog.addEventListener('close', () => opener?.focus());
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+
+// Capturas reais em tamanho ampliado, com retorno ao botão de origem.
+const imageDialog = document.querySelector('#image-dialog');
+let imageOpener;
+const screenshots = {
+  courttime: { title: 'CourtTime — consulta da quadra', src: 'assets/courttime.png', alt: 'Tela de consulta de horários da quadra no CourtTime', caption: 'Captura da baseline 436b262, documentada no repositório do CourtTime.' },
+  upbox: { title: 'UpBox — dashboard de estoque', src: 'assets/upbox.png', alt: 'Dashboard de estoque e histórico de movimentações do UpBox', caption: 'Captura do ambiente MySQL documentado no repositório do UpBox.' }
+};
+document.querySelectorAll('[data-image]').forEach(button => button.addEventListener('click', () => {
+  const screenshot = screenshots[button.dataset.image];
+  if (!screenshot) return;
+  imageOpener = button;
+  document.querySelector('#image-title').textContent = screenshot.title;
+  const image = document.querySelector('#image-preview');
+  image.src = screenshot.src;
+  image.alt = screenshot.alt;
+  document.querySelector('#image-caption').textContent = screenshot.caption;
+  imageDialog.showModal();
+}));
+document.querySelector('#close-image').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', event => {
+  const bounds = imageDialog.getBoundingClientRect();
+  if (event.target === imageDialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) imageDialog.close();
+});
+imageDialog.addEventListener('close', () => imageOpener?.focus());
