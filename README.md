@@ -1,54 +1,22 @@
 # Arthur Amancio — portfólio
 
-**[Acessar o portfólio público](https://arthur-amancio-portfolio.onrender.com/)** — abre sem login.
+[Visitar portfólio](https://arthur-amancio-portfolio.onrender.com/) · [Currículo em PDF](https://arthur-amancio-portfolio.onrender.com/assets/Arthur-Amancio-Curriculo.pdf)
 
-Site estático em português com apresentação pessoal, cinco projetos reais, filtros de tecnologia, detalhes em diálogo, formação, experiência e contato pelo LinkedIn/GitHub.
+Site estático em português com cinco projetos, formação, experiência e contato. A apresentação começa com Court Time e AgendaFácil Pro. Os detalhes de cada projeto têm links diretos, como `#detalhes-agenda`. O estudo de caso do TCC abre em `#estudo-courttime`.
 
-HTML, CSS e JavaScript sem dependências de build. Os arquivos na raiz e na pasta `assets/` compõem o site. Para servir localmente, com Python 3 instalado, execute `python -m http.server 8000` e abra `http://localhost:8000`.
+## Rodar localmente
 
-## Conteúdo
+Execute `python3 -m http.server 8000` na raiz e abra `http://localhost:8000`.
 
-Court Time é o destaque visual. AgendaFácil Pro, FlowStock, Guia do Colaborador UB e Hospital-ERP completam a seleção. Os estágios de desenvolvimento e a autoria em equipe são identificados. Não há formulário de contato, coleta de dados ou integração de contas.
+- `index.html` contém o conteúdo, os links, os detalhes expansíveis e os metadados de compartilhamento.
+- `style.css` contém o layout responsivo, o foco visível e as animações. O movimento acompanha a preferência do sistema.
+- `script.js` controla menu, filtros, links para detalhes, ampliação de imagens e entradas animadas. O conteúdo principal e as seções expansíveis usam HTML nativo.
+- `assets/` contém as imagens, o currículo web e o PDF.
 
-As capturas vieram dos repositórios públicos do proprietário:
-
-- Court Time: `docs/evidencias/baseline-436b262/aluno-quadra-1440.png`, baseline 436b262.
-
-As imagens são evidências históricas e podem diferir das interfaces atuais. Fontes DM Sans e Manrope são carregadas do Google Fonts, com fallback para fontes do sistema.
-
-## Manutenção
-
-Textos e links principais ficam em `index.html`; detalhes dos projetos ficam em `script.js`; aparência em `style.css`. Ao atualizar funcionalidades, compare os READMEs e a branch principal dos projetos antes de alterar as descrições.
-
-Recursos de acessibilidade: link para pular conteúdo, foco visível, menu com estado expandido, filtros com `aria-pressed`, anúncio de contagem, diálogos nativos para detalhes e ampliação das capturas, botões com alvos de toque maiores e respeito à preferência por movimento reduzido.
+As capturas do Court Time são da versão documentada `436b262`, em `docs/evidencias/baseline-436b262/` do repositório do TCC. O cartão do AgendaFácil usa um fluxo ilustrativo.
 
 ## Publicação no Render
 
-- Repositório: `arthur-amancio/Portifolio`, branch `main`.
-- Tipo: Static Site.
-- Comando de build: `mkdir -p public && cp index.html style.css script.js public/ && cp -R assets public/assets`.
-- Diretório publicado: `public`.
-- Atualização automática habilitada para a branch principal.
-
-O build publica somente HTML, CSS, JavaScript e assets. O site não depende de login do visitante.
-
-## Apresentação e contato
-
-- Estudo de caso do Court Time com problema, fluxo e participação em equipe.
-- AgendaFácil Pro como segundo destaque, com autoria individual.
-- Currículo público em `assets/curriculo.html`, com impressão e salvamento em PDF pelo navegador.
-- Contato profissional por e-mail e LinkedIn.
-- Metadados Open Graph, capa de compartilhamento e URL canônica.
-- Capturas históricas da baseline `436b262`, identificadas como tal. A captura mobile vem de `docs/evidencias/baseline-436b262/aluno-quadra-390.png` do repositório CourtTime.
-
-Validação: sintaxe JavaScript, filtros, diálogo de projeto, ampliação de captura, menu e ausência de rolagem horizontal nas larguras de celular e tablet verificadas.
-
-## Navegação e acessibilidade
-
-Os cinco projetos possuem detalhes nativos e links diretos por fragmento (`#detalhes-agenda`, por exemplo). Court Time e AgendaFácil aparecem juntos; o estudo completo do TCC é expansível. As contribuições individuais citam commits públicos.
-
-O currículo pode ser baixado em `assets/Arthur-Amancio-Curriculo.pdf`. O conteúdo e a navegação principal continuam acessíveis sem JavaScript.
-
-Verificação desta atualização: axe-core 4.10.3, tags WCAG 2 A/AA e 2.1 AA, sem violações detectadas na página inicial; 23 regras aprovadas. Isso não equivale a certificação de acessibilidade. Detalhes operáveis por teclado e larguras de 320 e 640 px sem rolagem horizontal na verificação. PDF revisado visualmente, com uma página.
-
-As capturas do Court Time permanecem históricas e identificadas. AgendaFácil usa um fluxo ilustrativo identificado, pois o repositório ainda não possui capturas reais. A verificação de zoom real de 200% não foi concluída nesta rodada.
+- Repositório `arthur-amancio/Portifolio`, branch `main`, como Static Site.
+- Comando de build `mkdir -p public && cp index.html style.css script.js public/ && cp -R assets public/assets`.
+- O diretório publicado é `public`. Atualizações em `main` iniciam a publicação automaticamente.
